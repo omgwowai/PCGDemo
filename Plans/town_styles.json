@@ -1,0 +1,172 @@
+{
+  "_comment": "Town art-style registry. Each style maps category -> weighted mesh list. Swap active_style (or pass a style to set_town_style.py) to re-skin the town without touching graph logic. When official art assets land, add a new style entry pointing at them - the prototype GeometryScript meshes stay available for fallback/testing.",
+  "active_style": "prototype",
+  "styles": {
+    "prototype": {
+      "description": "Procedural placeholder meshes (GeometryScript), blocky low-poly look",
+      "categories": {
+        "Road": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_RoadPlate",
+            "weight": 1
+          }
+        ],
+        "CivicPlot": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_PlotPlate",
+            "weight": 1
+          }
+        ],
+        "School": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_SchoolL",
+            "weight": 1
+          }
+        ],
+        "Hospital": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_HospitalCross",
+            "weight": 1
+          }
+        ],
+        "Commercial": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_Tower",
+            "weight": 1
+          }
+        ],
+        "House": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_HouseGable",
+            "weight": 3
+          },
+          {
+            "mesh": "/Game/Town/Meshes/SM_HouseFlat",
+            "weight": 2
+          }
+        ],
+        "Tree": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_TreeRound",
+            "weight": 3
+          },
+          {
+            "mesh": "/Game/Town/Meshes/SM_TreeConifer",
+            "weight": 2
+          }
+        ],
+        "Light": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_LampPost",
+            "weight": 1
+          }
+        ],
+        "StreetTree": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_TreeConifer",
+            "weight": 3
+          },
+          {
+            "mesh": "/Game/Town/Meshes/SM_TreeRound",
+            "weight": 1
+          }
+        ],
+        "Bench": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_Bench",
+            "weight": 1
+          }
+        ],
+        "Bin": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_Bin",
+            "weight": 1
+          }
+        ],
+        "BusStop": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_BusShelter",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "northern_village": {
+      "description": "Demo variant using the same prototype assets with a different mix: all-gable houses, conifer-only greenery. Proves style switching; replace with real art when available.",
+      "categories": {
+        "Road": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_RoadPlate",
+            "weight": 1
+          }
+        ],
+        "CivicPlot": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_PlotPlate",
+            "weight": 1
+          }
+        ],
+        "School": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_SchoolL",
+            "weight": 1
+          }
+        ],
+        "Hospital": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_HospitalCross",
+            "weight": 1
+          }
+        ],
+        "Commercial": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_HouseFlat",
+            "weight": 1
+          }
+        ],
+        "House": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_HouseGable",
+            "weight": 1
+          }
+        ],
+        "Tree": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_TreeConifer",
+            "weight": 1
+          }
+        ],
+        "Light": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_LampPost",
+            "weight": 1
+          }
+        ],
+        "StreetTree": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_TreeConifer",
+            "weight": 1
+          }
+        ],
+        "Bench": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_Bench",
+            "weight": 1
+          }
+        ],
+        "Bin": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_Bin",
+            "weight": 1
+          }
+        ],
+        "BusStop": [
+          {
+            "mesh": "/Game/Town/Meshes/SM_BusShelter",
+            "weight": 1
+          }
+        ]
+      }
+    }
+  }
+}

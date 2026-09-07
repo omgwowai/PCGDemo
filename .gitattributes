@@ -1,0 +1,13 @@
+# Unreal Engine binary assets
+*.uasset binary
+*.umap binary
+
+# Normalize text line endings
+*.cpp text
+*.h text
+*.cs text
+*.py text
+*.md text
+*.json text
+*.ini text
+*.uproject text
